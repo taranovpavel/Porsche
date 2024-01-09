@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+@import url("https://db.onlinewebfonts.com/c/83508f7a7fa801f818ae819a1b981635?family=Concielian+Classic+Condensed");
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +41,10 @@ video {
 h2 {
   font-size: 48px;
   letter-spacing: 4.32px;
+}
+
+.concielian {
+  font-family: "Concielian Classic", sans-serif;
 }
 
 .wrapper {
@@ -111,7 +117,6 @@ h2 {
   gap: 12px;
 }
 .main_content .text_big {
-  font-family: Concielian Classic;
   font-size: 96px;
   font-weight: 400;
   letter-spacing: 8.64px;
@@ -149,7 +154,7 @@ h2 {
 }
 
 .models {
-  margin: 66px 0;
+  margin: 66px 0 36px;
   text-align: center;
 }
 .models .container {
@@ -185,6 +190,7 @@ h2 {
   opacity: 0.2;
 }
 .slider .slick-dots {
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,7 +242,6 @@ h2 {
   border-radius: 0 0 10px 10px;
 }
 .slider_element div p {
-  font-family: Concielian Classic;
   font-size: 48px;
   letter-spacing: 4.32px;
   position: absolute;
@@ -276,4 +281,65 @@ h2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.center {
+  color: #111111;
+}
+.center_inner {
+  width: 100%;
+  height: 384px;
+  background-color: #DCDCDC;
+  border-radius: 10px;
+  padding: 58px 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.center_inner p {
+  width: 473px;
+  color: #111111;
+  font-size: 20px;
+  letter-spacing: 1.8px;
+}
+.center_inner h3 {
+  font-size: 36px;
+  color: #111111;
+  letter-spacing: 3.24px;
+}
+.center_inner a {
+  width: 181px;
+  height: 76px;
+  border-radius: 4px;
+  background: #111;
+  padding: 28px 27px;
+  font-size: 20px;
+  letter-spacing: 1.8px;
+}
+.center_inner div {
+  width: 726px;
+  height: 384px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("../images/image-center.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  border-radius: 0 4px 4px 0;
+}
+
+.shop {
+  text-align: center;
+}
+.shop h2 {
+  margin: 66px 0;
 }
