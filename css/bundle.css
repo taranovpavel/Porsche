@@ -413,6 +413,9 @@ h2 {
   display: flex;
 }
 .discover_inner_element {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: #000000;
   width: 360px;
   height: 500px;
@@ -457,4 +460,13 @@ h2 {
 }
 .discover_inner_element:hover p {
   display: block;
+}
+.discover_inner_element_one {
+  background-image: url(../images/image-travel.webp);
+}
+.discover_inner_element_two {
+  background-image: url(../images/image-approved.webp);
+}
+.discover_inner_element_three {
+  background-image: url(../images/image-motorsport.webp);
 }
