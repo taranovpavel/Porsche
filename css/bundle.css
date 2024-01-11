@@ -39,12 +39,17 @@ video {
 }
 
 h2 {
+  text-align: center;
   font-size: 48px;
   letter-spacing: 4.32px;
 }
 
 .concielian {
   font-family: "Concielian Classic", sans-serif;
+}
+
+.black {
+  color: #111;
 }
 
 .wrapper {
@@ -337,9 +342,119 @@ h2 {
   border-radius: 0 4px 4px 0;
 }
 
-.shop {
-  text-align: center;
-}
 .shop h2 {
   margin: 66px 0;
+}
+.shop_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px 36px;
+}
+.shop_inner_element {
+  width: 360px;
+  height: 500px;
+  background-color: #DCDCDC;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.shop_inner_element img {
+  width: 360px;
+  height: 290px;
+}
+.shop_inner_element_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+  padding: 14px 34px 26px 20px;
+}
+.shop_inner_element_text h4 {
+  font-size: 24px;
+  letter-spacing: 2.16px;
+}
+.shop_inner_element a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  justify-items: center;
+  gap: 8px;
+  bottom: 26px;
+  left: 24px;
+}
+.shop_inner_element a img {
+  margin-top: 4px;
+  width: 6px;
+  height: 12px;
+}
+
+.discover h2 {
+  margin: 66px 0;
+}
+.discover_inner {
+  gap: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.discover_inner_element {
+  background-color: #000000;
+  width: 360px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+.discover_inner_element div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center;
+  gap: 20px;
+  bottom: 28px;
+  left: 16px;
+  position: absolute;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.discover_inner_element div img {
+  margin-top: 5px;
+  height: 18px;
+  width: 9px;
+}
+.discover_inner_element div h4 {
+  font-size: 24px;
+}
+.discover_inner_element div p {
+  display: none;
+  width: 500px;
+}
+.discover_inner_element:hover {
+  width: 100%;
+}
+.discover_inner_element:hover img {
+  display: none;
+}
+.discover_inner_element:hover p {
+  display: block;
 }

@@ -202,6 +202,82 @@
       background-size: cover
       border-radius: 0 4px 4px 0
 .shop
-  text-align: center
   h2
     margin: 66px 0
+  &_inner
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 40px 36px
+    &_element
+      width: 360px
+      height: 500px
+      background-color: $main-color
+      border-radius: 10px
+      position: relative
+      overflow: hidden
+      img
+        width: 360px
+        height: 290px
+      &_text
+        display: flex
+        justify-items: center
+        justify-content: space-between
+        flex-direction: column
+        gap: 7px
+        padding: 14px 34px 26px 20px
+        h4
+          font-size: 24px
+          letter-spacing: 2.16px
+      a
+        display: flex
+        position: absolute
+        justify-items: center
+        gap: 8px
+        bottom: 26px
+        left: 24px
+        img
+          margin-top: 4px
+          width: 6px
+          height: 12px
+
+.discover
+  h2
+    margin: 66px 0
+  &_inner
+    gap: 36px
+    display: flex
+    &_element
+      background-color: #000000
+      width: 360px
+      height: 500px
+      border-radius: 10px
+      overflow: hidden
+      transition: .5s
+      position: relative
+      div
+        display: flex
+        justify-content: space-between
+        justify-items: center
+        gap: 20px
+        bottom: 28px
+        left: 16px
+        position: absolute
+        flex-wrap: wrap
+        img
+          margin-top: 5px
+          height: 18px
+          width: 9px
+        h4
+          font-size: 24px
+        p
+          display: none
+          width: 500px
+    &_element:hover
+      width: 100%
+      img
+        display: none
+      p
+        display: block
+
+
