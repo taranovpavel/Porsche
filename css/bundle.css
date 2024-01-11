@@ -403,6 +403,9 @@ h2 {
   height: 12px;
 }
 
+.discover {
+  padding: 0 0 66px;
+}
 .discover h2 {
   margin: 66px 0;
 }
@@ -426,47 +429,61 @@ h2 {
   position: relative;
 }
 .discover_inner_element div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  justify-items: center;
-  gap: 20px;
+  position: absolute;
   bottom: 28px;
   left: 16px;
-  position: absolute;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .discover_inner_element div img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
   margin-top: 5px;
   height: 18px;
   width: 9px;
+  bottom: 4px;
 }
 .discover_inner_element div h4 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
   font-size: 24px;
+  bottom: 0;
 }
 .discover_inner_element div p {
-  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  bottom: -125px;
   width: 500px;
 }
 .discover_inner_element:hover {
   width: 100%;
 }
+.discover_inner_element:hover h4 {
+  bottom: 110px;
+}
 .discover_inner_element:hover img {
-  display: none;
+  left: 700px;
 }
 .discover_inner_element:hover p {
   display: block;
+  bottom: 0;
 }
 .discover_inner_element_one {
   background-image: url(../images/image-travel.webp);
 }
+.discover_inner_element_one img {
+  left: 85px;
+}
 .discover_inner_element_two {
   background-image: url(../images/image-approved.webp);
 }
+.discover_inner_element_two img {
+  left: 131px;
+}
 .discover_inner_element_three {
   background-image: url(../images/image-motorsport.webp);
+}
+.discover_inner_element_three img {
+  left: 148.5px;
 }
