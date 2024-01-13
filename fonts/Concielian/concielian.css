@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Concielian Classic';
+    src: url('ConcielianClassicBold.eot');
+    src: url('ConcielianClassicBold.eot?#iefix') format('embedded-opentype'),
+        url('ConcielianClassicBold.woff2') format('woff2'),
+        url('ConcielianClassicBold.woff') format('woff'),
+        url('ConcielianClassicBold.ttf') format('truetype'),
+        url('ConcielianClassicBold.svg#ConcielianClassicBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
