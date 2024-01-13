@@ -48,6 +48,10 @@
         border-radius: 4px
         border: 1px solid $main-color
         padding: 16px 21px
+        transition: .3s
+      &_button:hover
+        background: rgba(0, 0, 0, 0.10)
+        backdrop-filter: blur(12.5px)
   &_title
     margin: 0
     font-size: 45px
@@ -107,12 +111,11 @@
       font-size: 0
       width: 10px
       height: 10px
-      background-color: $main-color
-      border-radius: 50%
-      border: 0
-    li.slick-active button
       background-color: transparent
+      border-radius: 50%
       border: 1px solid $main-color
+    li.slick-active button
+      background-color: $main-color
   &__item
     padding: 0 15px
     img
@@ -122,7 +125,7 @@
     height: 500px
     border-radius: 10px
     background-repeat: no-repeat
-    background-position: top center
+    background-position: center center
     background-size: cover
     position: relative
     div
@@ -132,12 +135,19 @@
       position: absolute
       bottom: 0
       border-radius: 0 0 10px 10px
-      p
+      transition: .5s
+      h4
         font-size: 48px
         letter-spacing: 4.32px
         position: absolute
         left: 22px
         bottom: 6px
+        transition: .5s
+  &_element:hover
+    h4
+      bottom: 14px
+
+
   &_element_1
     background-image: url("../images/image-718.webp")
   &_element_2
@@ -187,9 +197,16 @@
       height: 76px
       border-radius: 4px
       background: #111
-      padding: 28px 27px
-      font-size: 20px
-      letter-spacing: 1.8px
+      padding: 28px 0
+      p
+        transition: .5s
+        font-size: 20px
+        text-align: center
+        width: 100%
+        color: $main-color
+    a:hover
+      p
+        scale: 108%
     div
       width: 726px
       height: 384px
@@ -219,28 +236,49 @@
       img
         width: 360px
         height: 290px
+        transition: .5s
       &_text
         display: flex
         justify-items: center
         justify-content: space-between
         flex-direction: column
-        gap: 7px
-        padding: 14px 34px 26px 20px
-        h4
-          font-size: 24px
-          letter-spacing: 2.16px
-      a
-        display: flex
-        position: absolute
-        justify-items: center
-        gap: 8px
-        bottom: 26px
-        left: 24px
-        img
-          margin-top: 4px
-          width: 6px
-          height: 12px
-
+        position: relative
+        height: 206px
+        padding: 14px 14px 26px 20px
+        &_top
+          display: flex
+          gap: 7px
+          justify-items: center
+          justify-content: space-between
+          flex-direction: column
+          h4
+            font-size: 24px
+            letter-spacing: 2.16px
+        &_bottom
+          position: absolute
+          display: flex
+          justify-items: center
+          gap: 8px
+          bottom: 26px
+          img
+            margin-top: 2px
+            width: 6px
+            height: 12px
+      &_two
+        padding: 0 13px
+        .main
+          margin: 20px auto 1px
+          width: 334px
+          height: 269px
+      &_six
+        padding: 0 13px
+        .main
+          margin: 14px auto 15px
+          width: 324px
+          height: 261px
+    &_element:hover
+      .main
+        scale: 115%
 .discover
   padding: 0 0 100px
   h2
@@ -324,8 +362,16 @@
         width: 360px
         height: 60px
         background-color: #111
-        padding: 20px 108px
+        padding: 20px 0
         border-radius: 10px
+        p
+          transition: .5s
+          font-size: 18px
+          text-align: center
+          width: 100%
+      a:hover
+        p
+          scale: 108%
     &_center
       display: flex
       flex-direction: column
@@ -339,6 +385,11 @@
       ul
         display: flex
         gap: 15px
+        img
+          transition: .3s
+        li:hover
+          img
+            scale: 110%
   &_inner_bottom
     display: flex
     flex-direction: column

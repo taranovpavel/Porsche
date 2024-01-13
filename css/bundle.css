@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background-color: #111;
+  background: linear-gradient(188deg, #000 -11.82%, #111 34.04%, #111 85.81%, #000 114.64%);
 }
 
 .container {
@@ -48,6 +48,11 @@ h2 {
 
 .black {
   color: #111;
+}
+
+.logo {
+  width: 260px;
+  height: 32px;
 }
 
 .wrapper {
@@ -130,6 +135,13 @@ h2 {
   border-radius: 4px;
   border: 1px solid #DCDCDC;
   padding: 16px 21px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.main_content .text_button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
 }
 .main_title {
   margin: 0;
@@ -212,13 +224,12 @@ h2 {
   font-size: 0;
   width: 10px;
   height: 10px;
-  background-color: #DCDCDC;
+  background-color: transparent;
   border-radius: 50%;
-  border: 0;
+  border: 1px solid #DCDCDC;
 }
 .slider .slick-dots li.slick-active button {
-  background-color: transparent;
-  border: 1px solid #DCDCDC;
+  background-color: #DCDCDC;
 }
 .slider__item {
   padding: 0 15px;
@@ -231,7 +242,7 @@ h2 {
   height: 500px;
   border-radius: 10px;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
   background-size: cover;
   position: relative;
 }
@@ -243,13 +254,20 @@ h2 {
   position: absolute;
   bottom: 0;
   border-radius: 0 0 10px 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.slider_element div p {
+.slider_element div h4 {
   font-size: 48px;
   letter-spacing: 4.32px;
   position: absolute;
   left: 22px;
   bottom: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.slider_element:hover h4 {
+  bottom: 14px;
 }
 .slider_element_1 {
   background-image: url("../images/image-718.webp");
@@ -323,9 +341,18 @@ h2 {
   height: 76px;
   border-radius: 4px;
   background: #111;
-  padding: 28px 27px;
+  padding: 28px 0;
+}
+.center_inner a p {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-size: 20px;
-  letter-spacing: 1.8px;
+  text-align: center;
+  width: 100%;
+  color: #DCDCDC;
+}
+.center_inner a:hover p {
+  scale: 108%;
 }
 .center_inner div {
   width: 726px;
@@ -365,6 +392,8 @@ h2 {
 .shop_inner_element img {
   width: 360px;
   height: 290px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .shop_inner_element_text {
   display: -webkit-box;
@@ -378,27 +407,60 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 7px;
-  padding: 14px 34px 26px 20px;
+  position: relative;
+  height: 206px;
+  padding: 14px 14px 26px 20px;
 }
-.shop_inner_element_text h4 {
-  font-size: 24px;
-  letter-spacing: 2.16px;
-}
-.shop_inner_element a {
+.shop_inner_element_text_top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 7px;
+  justify-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.shop_inner_element_text_top h4 {
+  font-size: 24px;
+  letter-spacing: 2.16px;
+}
+.shop_inner_element_text_bottom {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   justify-items: center;
   gap: 8px;
   bottom: 26px;
-  left: 24px;
 }
-.shop_inner_element a img {
-  margin-top: 4px;
+.shop_inner_element_text_bottom img {
+  margin-top: 2px;
   width: 6px;
   height: 12px;
+}
+.shop_inner_element_two {
+  padding: 0 13px;
+}
+.shop_inner_element_two .main {
+  margin: 20px auto 1px;
+  width: 334px;
+  height: 269px;
+}
+.shop_inner_element_six {
+  padding: 0 13px;
+}
+.shop_inner_element_six .main {
+  margin: 14px auto 15px;
+  width: 324px;
+  height: 261px;
+}
+.shop_inner_element:hover .main {
+  scale: 115%;
 }
 
 .discover {
@@ -524,8 +586,18 @@ h2 {
   width: 360px;
   height: 60px;
   background-color: #111;
-  padding: 20px 108px;
+  padding: 20px 0;
   border-radius: 10px;
+}
+.footer_inner_top_left a p {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+.footer_inner_top_left a:hover p {
+  scale: 108%;
 }
 .footer_inner_top_center {
   display: -webkit-box;
@@ -554,6 +626,13 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+}
+.footer_inner_top_right ul img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer_inner_top_right ul li:hover img {
+  scale: 110%;
 }
 .footer_inner_bottom {
   display: -webkit-box;
