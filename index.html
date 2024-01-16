@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Java Script</title>
     <link rel="stylesheet" href="css/bundle.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="fonts/NanumGothic/nanum_gothic.css">
     <link rel="stylesheet" href="fonts/Concielian/concielian.css">
 </head>
@@ -38,13 +39,14 @@
                                         <a href="">Shopping Tools</a>
                                     </li>
                                 </ul>
-                                <a href=""><img src="images/icon-user.svg" alt="user"></a>
+                                <a class="userBtn"><img src="images/icon-user.svg" alt="user"></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="text">
                     <div class="container">
+
                         <a class="text_big concielian" href="">911 GT3</a>
                         <a class="text_button" href="">Discover more</a>
                     </div>
@@ -254,8 +256,21 @@
             </div>
         </div>
     </div>
+    <div class="modal">
+        <div class="modal_inner">
+            <img class="close" src="images/icon-plus.svg" alt="plus">
+            <img src="images/icon-logo-black.svg" alt="porsche">
+            <h6 class="black">Welcome</h6>
+            <form action="">
+                <input class="black" placeholder="Email" type="email">
+                <input class="black" placeholder="Number" type="text">
+            </form>
+            <a href="">Continue</a>
+        </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/modal.js"></script>
 </html>
