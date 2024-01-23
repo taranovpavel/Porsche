@@ -87,10 +87,11 @@
           left: 190px
 .cars
   &_inner
+    margin: 66px 0 0
     display: flex
     flex-wrap: wrap
     &_top
-      &_block
+      &_elements
         width: 1152px
         height: 570px
         border-radius: 10px
@@ -98,6 +99,34 @@
         display: flex
         overflow: hidden
         position: relative
+        .one
+          background-image: url(../images/image-macan-front.webp)
+        .two
+          background-image: url(../images/image-macan-side.webp)
+        .three
+          background-image: url(../images/image-macan-back.webp)
+        .name
+          left: 30px
+          bottom: 72px
+          position: absolute
+          font-size: 34px
+          z-index: 2
+          font-weight: 800
+        .cost
+          left: 30px
+          bottom: 30px
+          position: absolute
+          font-size: 34px
+          z-index: 2
+          font-weight: 800
+        .block
+          width: 345px
+          height: 135px
+          position: absolute
+          background-color: #80000e
+          border-radius: 0 50px 0 0
+          bottom: 0
+          left: 0
       &_element
         width: 400px
         height: 100%
@@ -107,17 +136,10 @@
         transition: .6s
         box-shadow: 0 0 20px 0 #111 inset
       &_element:hover
-        width: 160%
-      &_718
-        .one
-          background-image: url(../images/image-718-front.webp)
-        .two
-          background-image: url(../images/image-718-right.webp)
-        .three
-          background-image: url(../images/image-718-back.webp)
+        width: 180%
     &_bottom
       width: 100%
-      padding: 40px 0
+      padding: 40px 0 100px
       display: flex
       justify-content: space-between
       .inputs

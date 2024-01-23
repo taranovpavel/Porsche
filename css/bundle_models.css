@@ -188,13 +188,14 @@ input {
 }
 
 .cars_inner {
+  margin: 66px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.cars_inner_top_block {
+.cars_inner_top_elements {
   width: 1152px;
   height: 570px;
   border-radius: 10px;
@@ -204,6 +205,40 @@ input {
   display: flex;
   overflow: hidden;
   position: relative;
+}
+.cars_inner_top_elements .one {
+  background-image: url(../images/image-macan-front.webp);
+}
+.cars_inner_top_elements .two {
+  background-image: url(../images/image-macan-side.webp);
+}
+.cars_inner_top_elements .three {
+  background-image: url(../images/image-macan-back.webp);
+}
+.cars_inner_top_elements .name {
+  left: 30px;
+  bottom: 72px;
+  position: absolute;
+  font-size: 34px;
+  z-index: 2;
+  font-weight: 800;
+}
+.cars_inner_top_elements .cost {
+  left: 30px;
+  bottom: 30px;
+  position: absolute;
+  font-size: 34px;
+  z-index: 2;
+  font-weight: 800;
+}
+.cars_inner_top_elements .block {
+  width: 345px;
+  height: 135px;
+  position: absolute;
+  background-color: #80000e;
+  border-radius: 0 50px 0 0;
+  bottom: 0;
+  left: 0;
 }
 .cars_inner_top_element {
   width: 400px;
@@ -217,20 +252,11 @@ input {
           box-shadow: 0 0 20px 0 #111 inset;
 }
 .cars_inner_top_element:hover {
-  width: 160%;
-}
-.cars_inner_top_718 .one {
-  background-image: url(../images/image-718-front.webp);
-}
-.cars_inner_top_718 .two {
-  background-image: url(../images/image-718-right.webp);
-}
-.cars_inner_top_718 .three {
-  background-image: url(../images/image-718-back.webp);
+  width: 180%;
 }
 .cars_inner_bottom {
   width: 100%;
-  padding: 40px 0;
+  padding: 40px 0 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
