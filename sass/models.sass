@@ -1,0 +1,87 @@
+.models
+  margin: 66px 0
+  &_inner
+    display: flex
+    justify-content: space-between
+    &_left
+      &_elements
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        gap: 42px
+      &_element
+        width: 168px
+        height: 60px
+        text-align: center
+        background-color: $main-color
+        border-radius: 10px
+        padding: 22px 0
+        cursor: pointer
+        &_active
+          background-color: unset
+          border: 2px solid $main-color
+          color: $main-color
+    &_right
+      display: flex
+      justify-content: space-between
+      &_element
+        width: 952px
+        height: 570px
+        border-radius: 10px
+        padding: 50px
+        transition: .5s
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        overflow: hidden
+        position: relative
+        img
+          transition: .5s
+          position: absolute
+          margin-top: 5px
+          height: 20px
+          width: 14px
+          bottom: 58px
+        h4
+          transition: .5s
+          position: absolute
+          font-size: 34px
+          bottom: 50px
+        p
+          transition: .5s
+          position: absolute
+          bottom: -125px
+          width: 500px
+      &_element:hover
+        scale: 99%
+        h4
+          bottom: 170px
+        img
+          left: 1100px
+        p
+          display: block
+          bottom: 50px
+      &_element_one
+        background-image: url(../images/image-cayenne-big.webp)
+        img
+          left: 205px
+      &_element_two
+        background-image: url(../images/image-718-big.webp)
+        img
+          left: 125px
+      &_element_three
+        background-image: url(../images/image-panamera-big.webp)
+        img
+          left: 235px
+      &_element_four
+        background-image: url(../images/image-911-big.webp)
+        img
+          left: 125px
+      &_element_five
+        background-image: url(../images/image-macan-big.webp)
+        img
+          left: 180px
+      &_element_six
+        background-image: url(../images/image-taycan-big.webp)
+        img
+          left: 190px
