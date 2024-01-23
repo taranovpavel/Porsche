@@ -52,6 +52,10 @@ h2 {
   height: 32px;
 }
 
+input {
+  -moz-appearance: textfield;
+}
+
 .models {
   margin: 66px 0;
 }
@@ -181,6 +185,98 @@ h2 {
 }
 .models_inner_right_element_six img {
   left: 190px;
+}
+
+.cars_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.cars_inner_top_block {
+  width: 1152px;
+  height: 570px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.cars_inner_top_element {
+  width: 400px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-box-shadow: 0 0 20px 0 #111 inset;
+          box-shadow: 0 0 20px 0 #111 inset;
+}
+.cars_inner_top_element:hover {
+  width: 160%;
+}
+.cars_inner_top_718 .one {
+  background-image: url(../images/image-718-front.webp);
+}
+.cars_inner_top_718 .two {
+  background-image: url(../images/image-718-right.webp);
+}
+.cars_inner_top_718 .three {
+  background-image: url(../images/image-718-back.webp);
+}
+.cars_inner_bottom {
+  width: 100%;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cars_inner_bottom .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 75px;
+}
+.cars_inner_bottom .inputs div {
+  position: relative;
+}
+.cars_inner_bottom .inputs div p {
+  position: absolute;
+  right: 10px;
+  top: 19px;
+  font-size: 22px;
+}
+.cars_inner_bottom_input {
+  width: 200px;
+  height: 60px;
+  padding: 0 15px;
+  border-radius: 10px;
+  border: 2px solid #DCDCDC;
+  font-size: 22px;
+  background-color: #111;
+}
+.cars_inner_bottom_button {
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #DCDCDC;
+  width: 250px;
+  padding: 16px 41px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .modal {
