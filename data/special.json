@@ -1,0 +1,27 @@
+[
+  {
+    "dataImage": "../images/image-911dakar.webp",
+    "dataName": "911 Dakar",
+    "dataPrice": "From $230,000"
+  },
+  {
+    "dataImage": "../images/image-macanE.webp",
+    "dataName": "Macan Electric",
+    "dataPrice": "From $76,000"
+  },
+  {
+    "dataImage": "../images/image-718GT4RS.webp",
+    "dataName": "718 Cayman GT4 RS",
+    "dataPrice": "From $160,000"
+  },
+  {
+    "dataImage": "../images/image-911-front-gt3rs.webp",
+    "dataName": "911 GT3 RS",
+    "dataPrice": "From $230,000"
+  },
+  {
+    "dataImage": "../images/image-718cayman.webp",
+    "dataName": "718 Cayman",
+    "dataPrice": "From $60,000"
+  }
+]

@@ -95,10 +95,10 @@
     cursor: pointer
   .slick-prev
     left: 0
-    background: url('../images/icon-right.svg') 0 0 / 100% no-repeat
+    background: url('../images/icon-left.svg') 0 0 / 100% no-repeat
   .slick-arrow.slick-next
     right: 0
-    background: url('../images/icon-left.svg') 0 0 / 100% no-repeat
+    background: url('../images/icon-right.svg') 0 0 / 100% no-repeat
   .slick-arrow.slick-disabled
     opacity: 0.2
   .slick-dots
@@ -281,6 +281,43 @@
     &_element:hover
       .main
         scale: 115%
+.special
+  h2
+    margin: 66px 0
+  &_inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_buttons
+      height: 40px
+      width: 21px
+      cursor: pointer
+    &_main
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      width: 1000px
+      height: 500px
+      border-radius: 10px
+      position: relative
+      &_gradient
+        position: absolute
+        height: 200px
+        width: 100%
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, #111 118.98%)
+        bottom: 0
+      h3
+        position: absolute
+        bottom: 80px
+        left: 40px
+        z-index: 2
+        font-size: 48px
+      p
+        position: absolute
+        bottom: 40px
+        left: 40px
+        z-index: 2
+        font-size: 18px
 .discover
   padding: 0 0 100px
   h2
