@@ -12,6 +12,9 @@ const name = document.querySelector(".name")
 const cost = document.querySelector(".cost")
 const block = document.querySelector(".block")
 let i = 0
+
+
+
 const hideTabContent = () =>{
     tabContents.forEach((tabContent) =>{
         tabContent.style.display = "none"
@@ -47,41 +50,45 @@ tabsParent.onclick = (event) =>{
         })
     }
 }
-const converter = (element, targetElementOne, targetElementTwo, currentValue) => {
-    element.oninput = () => {
-        const request = new XMLHttpRequest()
-        request.open("GET", "../data/exchangeRates.json")
-        request.setRequestHeader("Content-type", "application.json")
-        request.send()
-        request.addEventListener("load", () => {
-            const data = JSON.parse(request.response)
-            switch (currentValue) {
-                case "som":
-                    targetElementOne.value = (element.value / data.usd).toFixed(2)
-                    targetElementTwo.value = (element.value / data.euro).toFixed(2)
-                    break
-                case "usd":
-                    targetElementOne.value = (element.value * data.usd).toFixed(2)
-                    targetElementTwo.value = (targetElementOne.value / data.euro).toFixed(2)
-                    break
-                case "euro":
-                    targetElementOne.value = (element.value * data.euro).toFixed(2)
-                    targetElementTwo.value = (targetElementOne.value / data.usd).toFixed(2)
-                    break
-                default:
-                    break
-            }
-            if (element.value === ""){
-                targetElementOne.value = ""
-                targetElementTwo.value = ""
-            }
-        })
+
+
+const converter = async (element, targetElementOne, targetElementTwo, currentValue) =>{
+    const response = await fetch("../data/exchangeRates.json")
+    const data = await response.json()
+    element.oninput = () =>{
+        switch (currentValue) {
+            case "som":
+                targetElementOne.value = (element.value / data.usd).toFixed(2)
+                targetElementTwo.value = (element.value / data.euro).toFixed(2)
+                break
+            case "usd":
+                targetElementOne.value = (element.value * data.usd).toFixed(2)
+                targetElementTwo.value = (targetElementOne.value / data.euro).toFixed(2)
+                break
+            case "euro":
+                targetElementOne.value = (element.value * data.euro).toFixed(2)
+                targetElementTwo.value = (targetElementOne.value / data.usd).toFixed(2)
+                break
+            default:
+                break
+        }
+        if (element.value === "") {
+            targetElementOne.value = ""
+            targetElementTwo.value = ""
+        }
     }
 }
 converter(input_som,input_usd,input_euro,"som")
 converter(input_usd,input_som,input_euro,"usd")
 converter(input_euro,input_som,input_usd,"euro")
+
+
 findPorsche.onclick=()=> {
+    if (input_usd.value>=65500) {
+        name.style.color = "#DCDCDCFF"
+        cost.style.color = "#DCDCDCFF"
+        block.style.width = "340px"
+    }
     if (input_usd.value>=250000){
         one.style.backgroundImage = "url(../images/image-911-front-gt3rs.webp)"
         two.style.backgroundImage = "url(../images/image-911-side-gt3rs.webp)"
@@ -91,6 +98,7 @@ findPorsche.onclick=()=> {
         cost.textContent = "From $250,000"
         cost.style.color = "#111"
         block.style.backgroundColor = "rgb(233, 202, 26)"
+        block.style.width = "430px"
     }else if (input_usd.value>=200000){
         one.style.backgroundImage = "url(../images/image-taycan-front-turbos.webp)"
         two.style.backgroundImage = "url(../images/image-taycan-side-turbos.webp)"
@@ -98,6 +106,7 @@ findPorsche.onclick=()=> {
         name.textContent = "Taycan Turbo S"
         cost.textContent = "From $200,000"
         block.style.backgroundColor = "rgb(19, 38, 66)"
+        block.style.width = "580px"
     }else if (input_usd.value>=165000){
         one.style.backgroundImage = "url(../images/image-911-front-gts.webp)"
         two.style.backgroundImage = "url(../images/image-911-side-gts.webp)"
@@ -105,12 +114,14 @@ findPorsche.onclick=()=> {
         name.textContent = "911 Carrera 4 GTS"
         cost.textContent = "From $165,000"
         block.style.backgroundColor = "rgb(34, 68, 127)"
+        block.style.width = "660px"
     }else if (input_usd.value>=130000){
         one.style.backgroundImage = "url(../images/image-911-front-t.webp)"
         two.style.backgroundImage = "url(../images/image-911-side-t.webp)"
         three.style.backgroundImage = "url(../images/image-911-back-t.webp)"
         name.textContent = "911 Carrera T"
         cost.textContent = "From $130,000"
+        block.style.width = "500px"
         block.style.backgroundColor = "#a01954"
     }else if (input_usd.value>=115000){
         one.style.backgroundImage = "url(../images/image-911-front.webp)"
@@ -119,6 +130,7 @@ findPorsche.onclick=()=> {
         name.textContent = "911 Carrera"
         cost.textContent = "From $115,000"
         block.style.backgroundColor = "rgb(34, 34, 36)"
+        block.style.width = "420px"
     }else if (input_usd.value>=110000){
         one.style.backgroundImage = "url(../images/image-panamera-front-4s.webp)"
         two.style.backgroundImage = "url(../images/image-panamera-side-4s.webp)"
@@ -126,6 +138,7 @@ findPorsche.onclick=()=> {
         name.textContent = "Panamera 4S"
         cost.textContent = "From $110,000"
         block.style.backgroundColor = "rgb(45, 13, 22)"
+        block.style.width = "500px"
     }else if (input_usd.value>=92000){
         one.style.backgroundImage = "url(../images/image-taycan-front.webp)"
         two.style.backgroundImage = "url(../images/image-taycan-side.webp)"
@@ -147,6 +160,7 @@ findPorsche.onclick=()=> {
         name.textContent = "718 Cayman"
         cost.textContent = "From $70,000"
         block.style.backgroundColor = "rgb(34, 34, 36)"
+        block.style.width = "430px"
     }else if (input_usd.value>=65500) {
         one.style.backgroundImage = "url(../images/image-macan-front.webp)"
         two.style.backgroundImage = "url(../images/image-macan-side.webp)"

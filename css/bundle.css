@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #DCDCDC;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -177,7 +177,7 @@ input {
   text-align: center;
 }
 .models .container {
-  width: 1342px;
+  width: 1294px;
 }
 
 .slider {
@@ -192,8 +192,8 @@ input {
   margin: -20.5px 0px 0px 0px;
   z-index: 10;
   font-size: 0;
-  width: 20px;
-  height: 41px;
+  width: 26px;
+  height: 45px;
   border: 0;
   cursor: pointer;
 }
@@ -470,6 +470,9 @@ input {
 .special h2 {
   margin: 66px 0;
 }
+.special .container {
+  width: 1294px;
+}
 .special_inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,7 +493,7 @@ input {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1000px;
+  width: 1152px;
   height: 500px;
   border-radius: 10px;
   position: relative;
@@ -596,7 +599,7 @@ input {
   background-image: url(../images/image-approved.webp);
 }
 .discover_inner_element_two img {
-  left: 131px;
+  left: 145px;
 }
 .discover_inner_element_three {
   background-image: url(../images/image-motorsport.webp);

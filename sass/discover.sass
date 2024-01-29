@@ -1,0 +1,179 @@
+.wrapper
+  position: relative
+  .main
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+    height: 100vh
+    width: 100%
+    position: relative
+    h2
+      text-align: left
+      position: absolute
+    p
+      position: absolute
+      font-size: 24px
+  .gradient
+    width: 100%
+    height: 75vh
+    background: linear-gradient(0deg, #111 0%, rgba(17, 17, 17, 0.00) 100%)
+    position: absolute
+    bottom: 0
+.motorsport
+  background-image: url("../images/image-motorsport-big.webp")
+  h2
+    width: 1030px
+    bottom: 140px
+  p
+    bottom: 90px
+.motorsport_bottom
+  padding-bottom: 66px
+  h2
+    margin: 66px 0
+  &_elements
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 25px
+    &_element
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      height: 300px
+      border-radius: 10px
+      background-color: #fff
+      position: relative
+      h3
+        transition: 0.5s
+        position: absolute
+        bottom: 5px
+        left: 15px
+        font-size: 42px
+    &_element:hover
+      h3
+        bottom: 20px
+    &_one
+      width: 740px
+      background-image: url(../images/image-911-GT3-cup.webp)
+    &_two
+      width: 387px
+      background-image: url(../images/image-718-cayman-GT4-Clubsport.webp)
+    &_three
+      width: 640px
+      background-image: url(../images/image-718-cayman-GT4RSClubsport.webp)
+    &_four
+      width: 487px
+      background-image: url(../images/image-911GT2RSClubsport.webp)
+.travel
+  background-image: url(../images/image-travel-big.webp)
+  h2
+    bottom: 140px
+  p
+    bottom: 90px
+.travel_bottom
+  padding-bottom: 66px
+  h2
+    margin: 66px 0
+  h3
+    width: 100%
+    font-size: 42px
+    text-align: center
+  &_inner
+    display: flex
+    justify-content: space-between
+    gap: 25px
+    .button
+      height: 50px
+      width: 145px
+      background-color: #fff
+      text-align: center
+      padding: 16px 0
+      border-radius: 5px
+      p
+        transition: 0.5s
+    .button:hover
+      p
+        scale: 108%
+    &_element_one
+      width: 100%
+      height: 625px
+      background-color: #fff
+      border-radius: 10px
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      padding: 225px 0
+      background-image: url(../images/image-travel-top.webp)
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+    &_right
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      gap: 25px
+      &_element
+        width: 670px
+        height: 300px
+        border-radius: 10px
+        background-color: #fff
+        background-repeat: no-repeat
+        background-position: bottom
+        background-size: cover
+        padding: 75px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        &_one
+          background-image: url(../images/image-travel-cars.webp)
+        &_two
+          background-image: url(../images/image-lake.webp)
+.experience
+  background-image: url(../images/image-experience-big.webp)
+  h2
+    bottom: 140px
+  p
+    bottom: 90px
+.experience_bottom
+  padding-bottom: 100px
+  h2
+    margin: 66px 0
+  &_inner
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 25px
+    &_element
+      width: 650px
+      height: 625px
+      background-color: #fff
+      border-radius: 10px
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      background-image: url(../images/image-book.webp)
+    &_right
+      position: relative
+      width: 477px
+      h3
+        font-size: 32px
+        margin-bottom: 33px
+      p
+        font-size: 18px
+      &_button
+        width: 100%
+        height: 60px
+        background-color: $main-color
+        position: absolute
+        bottom: 0
+        border-radius: 10px
+        font-size: 18px
+        text-align: center
+        padding: 20px 0
+        cursor: pointer
+        p
+          transition: 0.5s
+      &_button:hover
+        p
+          scale: 108%

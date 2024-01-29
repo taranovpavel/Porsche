@@ -3,15 +3,44 @@ const next = document.querySelector(".special_inner_right")
 const prev = document.querySelector(".special_inner_left")
 const name = document.querySelector(".name")
 const price = document.querySelector(".price")
+const shopInner = document.querySelector(".shop_inner")
 let i = 0
-const cardFetcher = (id) =>{
-	fetch(`../data/special.json`)
-		.then(response => response.json())
-		.then(data =>{
-			special.style.backgroundImage = `url(${data[id].dataImage})`
-			price.textContent = `${data[id].dataPrice}`
-			name.textContent = `${data[id].dataName}`
-		})
+
+const shopList = async() =>{
+	const response = await fetch("../data/cards.json/?_limit=10")
+	const data = await response.json()
+	data.forEach((card)=>{
+		if (card.id <= 5){
+			const shopCard = document.createElement("a")
+			shopCard.href = "pages/shop.html"
+			shopCard.innerHTML = `
+              <div class="shop_inner_element shop_inner_element_one">
+                  <img class="main" src="${card.img}" alt="${card.name}">
+                  <div class="shop_inner_element_text">
+                      <div class="shop_inner_element_text_top">
+                          <h4 class="black">${card.name}</h4>
+                          <p class="black">${card.description}</p>
+                      </div>
+                      <div class="shop_inner_element_text_bottom">
+                          <img src="../images/icon-arrow-mini.svg" alt="arrow">
+                          <p class="black">From $${card.price}</p>
+                      </div>
+                  </div>
+              </div>
+            `
+			shopInner.append(shopCard)
+		}
+	})
+}
+shopList()
+
+
+const cardFetcher = async (id) =>{
+	const response = await fetch("../data/special.json")
+	const data = await response.json()
+	special.style.backgroundImage = `url(${data[id].dataImage})`
+	price.textContent = `${data[id].dataPrice}`
+	name.textContent = `${data[id].dataName}`
 }
 cardFetcher(i)
 const cardNext = () =>{
@@ -37,21 +66,9 @@ prev.onclick = () =>{
 		cardFetcher(i)
 	}
 }
-
 const cardInterval = setInterval(() =>{
 	cardNext()
 },3000)
-
-
-const dataPosts = () =>{
-	fetch(`https://jsonplaceholder.typicode.com/posts`)
-		.then(response => response.json())
-		.then(data =>{
-			console.log(data)
-		})
-}
-dataPosts()
-
 
 $(document).ready(function(){
 	$('.slider').slick({

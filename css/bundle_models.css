@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #DCDCDC;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -199,12 +199,12 @@ input {
   width: 1152px;
   height: 570px;
   border-radius: 10px;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   position: relative;
+  gap: 15px;
 }
 .cars_inner_top_elements .one {
   background-image: url(../images/image-macan-front.webp);
@@ -217,10 +217,9 @@ input {
 }
 .cars_inner_top_elements .name {
   left: 30px;
-  bottom: 72px;
+  bottom: 62px;
   position: absolute;
   z-index: 2;
-  font-weight: 800;
   font-size: 48px;
 }
 .cars_inner_top_elements .cost {
@@ -229,16 +228,17 @@ input {
   position: absolute;
   font-size: 18px;
   z-index: 2;
-  font-weight: 800;
 }
 .cars_inner_top_elements .block {
-  width: 410px;
-  height: 135px;
+  width: 340px;
+  height: 120px;
   position: absolute;
   background-color: #80000e;
   border-radius: 0 50px 0 0;
   bottom: 0;
   left: 0;
+  -webkit-box-shadow: 5px -5px 8px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px -5px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .cars_inner_top_element {
   width: 400px;

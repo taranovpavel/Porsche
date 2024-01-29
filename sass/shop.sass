@@ -1,0 +1,62 @@
+.shop
+  padding-bottom: 100px
+  h2
+    margin: 66px 0
+  &_inner
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 40px 36px
+    &_element
+      width: 360px
+      height: 500px
+      background-color: $main-color
+      border-radius: 10px
+      position: relative
+      overflow: hidden
+      img
+        width: 360px
+        height: 290px
+        transition: .5s
+      &_text
+        display: flex
+        justify-items: center
+        justify-content: space-between
+        flex-direction: column
+        position: relative
+        height: 206px
+        padding: 14px 14px 26px 20px
+        &_top
+          display: flex
+          gap: 7px
+          justify-items: center
+          justify-content: space-between
+          flex-direction: column
+          h4
+            font-size: 24px
+            letter-spacing: 2.16px
+        &_bottom
+          position: absolute
+          display: flex
+          justify-items: center
+          gap: 8px
+          bottom: 26px
+          img
+            margin-top: 2px
+            width: 6px
+            height: 12px
+      &_two
+        padding: 0 13px
+        .main
+          margin: 20px auto 1px
+          width: 334px
+          height: 269px
+      &_six
+        padding: 0 13px
+        .main
+          margin: 14px auto 15px
+          width: 324px
+          height: 261px
+    &_element:hover
+      .main
+        scale: 115%
